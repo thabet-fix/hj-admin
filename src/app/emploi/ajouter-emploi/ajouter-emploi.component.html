@@ -3,13 +3,12 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Ajouter une offre d'emploi
-      <small>Preview</small>
+      Ajouter une offre
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li><a href="#">Forms</a></li>
-      <li class="active">Advanced Elements</li>
+      <li><a href="#">Offres d'emlplois</a></li>
+      <li class="active">Ajouter une offre</li>
     </ol>
   </section>
 
@@ -19,7 +18,7 @@
     <!-- SELECT2 EXAMPLE -->
     <div class="box box-default">
       <div class="box-header with-border">
-        <h3 class="box-title">Select2</h3>
+        <h3 class="box-title">Ajouter une offre</h3>
 
         <div class="box-tools pull-right">
           <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
@@ -31,7 +30,12 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <label>Minimal</label>
+              <label>Titre de l'offre :</label>
+              <input type="text" class="form-control">
+            </div>
+            <!-- /.form-group -->
+            <div class="form-group">
+              <label>Lieu :</label>
               <select class="form-control select2" style="width: 100%;">
                 <option selected="selected">Alabama</option>
                 <option>Alaska</option>
@@ -44,15 +48,52 @@
             </div>
             <!-- /.form-group -->
             <div class="form-group">
-              <label>Disabled</label>
-              <select class="form-control select2" disabled="disabled" style="width: 100%;">
-                <option selected="selected">Alabama</option>
-                <option>Alaska</option>
-                <option>California</option>
-                <option>Delaware</option>
-                <option>Tennessee</option>
-                <option>Texas</option>
-                <option>Washington</option>
+              <label>Type de contrat :</label>
+              <select class="form-control select2" style="width: 100%;">
+                <option selected="selected">CDD</option>
+                <option>CDI</option>
+                <option>Stage</option>
+                <option>...</option>
+              </select>
+            </div>
+            <!-- /.form-group -->
+            <div class="form-group">
+              <label>Salaire :</label>
+              <select class="form-control select2" style="width: 100%;">
+                <option selected="selected">30k -> 40k</option>
+                <option>40k -> 50k</option>
+                <option>50k -> 60k</option>
+                <option>...</option>
+              </select>
+            </div>
+            <!-- /.form-group -->
+            <div class="form-group">
+              <label>Secteur d'activité :</label>
+              <select class="form-control select2" style="width: 100%;">
+                <option selected="selected">Développement web</option>
+                <option>40k -> 50k</option>
+                <option>50k -> 60k</option>
+                <option>...</option>
+              </select>
+            </div>
+            <!-- /.form-group -->
+            <div class="form-group">
+              <label>Niveau d'études :</label>
+              <select class="form-control select2" style="width: 100%;">
+                <option selected="selected">Bac</option>
+                <option>Bac+2</option>
+                <option>Bac+4</option>
+                <option>...</option>
+              </select>
+            </div>
+            <!-- /.form-group -->
+            <div class="form-group">
+              <label>Niveau de poste :</label>
+              <select class="form-control select2" style="width: 100%;">
+                <option selected="selected">Sans experiance</option>
+                <option>Débutant</option>
+                <option>Confirmé / expert</option>
+                <option>...</option>
               </select>
             </div>
             <!-- /.form-group -->
@@ -60,34 +101,29 @@
           <!-- /.col -->
           <div class="col-md-6">
             <div class="form-group">
-              <label>Multiple</label>
-              <select class="form-control select2" multiple="multiple" data-placeholder="Select a State"
-                      style="width: 100%;">
-                <option>Alabama</option>
-                <option>Alaska</option>
-                <option>California</option>
-                <option>Delaware</option>
-                <option>Tennessee</option>
-                <option>Texas</option>
-                <option>Washington</option>
-              </select>
+              <label>Description générale de la société :</label>
+              <textarea rows="5" class="form-control select2"></textarea>
             </div>
             <!-- /.form-group -->
             <div class="form-group">
-              <label>Disabled Result</label>
-              <select class="form-control select2" style="width: 100%;">
-                <option selected="selected">Alabama</option>
-                <option>Alaska</option>
-                <option disabled="disabled">California (disabled)</option>
-                <option>Delaware</option>
-                <option>Tennessee</option>
-                <option>Texas</option>
-                <option>Washington</option>
-              </select>
+              <label>Description détaillé du poste :</label>
+              <textarea rows="5" class="form-control select2"></textarea>
+            </div>
+            <!-- /.form-group -->
+            <div class="form-group">
+              <label>Description du profile demandé :</label>
+              <textarea rows="8" class="form-control select2"></textarea>
             </div>
             <!-- /.form-group -->
           </div>
           <!-- /.col -->
+        </div>
+        <!-- /.row -->
+        <div class="row">
+          <div class="col-md-12">
+            <input type="button" value="Sauvegarder" class="btn pull-right btn-success btn-flat">
+          </div>
+          <!-- /.col-md-12 -->
         </div>
         <!-- /.row -->
       </div>
