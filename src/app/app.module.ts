@@ -9,10 +9,12 @@ import { FooterComponent } from './footer/footer.component';
 import { SettingComponent } from './setting/setting.component';
 import { ListeEmploiComponent } from './emploi/liste-emploi/liste-emploi.component';
 import { AjouterEmploiComponent } from './emploi/ajouter-emploi/ajouter-emploi.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const appRoutes: Routes= [
   { path: '', redirectTo: '/', pathMatch: 'full' },
-  { path: '', component: SettingComponent },
+  { path: '', component: DashboardComponent },
+  { path: 'setting', component: SettingComponent },
   { path: 'liste-emploi', component: ListeEmploiComponent },  
   { path: 'ajouter-emploi', component: AjouterEmploiComponent }  
 ];
@@ -25,7 +27,8 @@ const appRoutes: Routes= [
     FooterComponent,
     SettingComponent,
     ListeEmploiComponent,
-    AjouterEmploiComponent
+    AjouterEmploiComponent,
+    DashboardComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
