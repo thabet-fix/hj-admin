@@ -10,13 +10,15 @@ import { SettingComponent } from './setting/setting.component';
 import { ListeEmploiComponent } from './emploi/liste-emploi/liste-emploi.component';
 import { AjouterEmploiComponent } from './emploi/ajouter-emploi/ajouter-emploi.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { RecrutementComponent } from './recrutement/recrutement.component';
 
 const appRoutes: Routes= [
   { path: '', redirectTo: '/', pathMatch: 'full' },
   { path: '', component: DashboardComponent },
   { path: 'setting', component: SettingComponent },
   { path: 'liste-emploi', component: ListeEmploiComponent },  
-  { path: 'ajouter-emploi', component: AjouterEmploiComponent }  
+  { path: 'ajouter-emploi', component: AjouterEmploiComponent }, 
+  { path: 'plateforme-recrutement', component: RecrutementComponent }  
 ];
 
 @NgModule({
@@ -28,7 +30,8 @@ const appRoutes: Routes= [
     SettingComponent,
     ListeEmploiComponent,
     AjouterEmploiComponent,
-    DashboardComponent
+    DashboardComponent,
+    RecrutementComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
