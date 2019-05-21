@@ -10,9 +10,9 @@ import { Observable } from 'rxjs';
 })
 export class ListeEmploiComponent implements OnInit {
 	
-  items: Observable<any[]>;
+  offres_db: Observable<any[]>;
   constructor(db: AngularFirestore) {
-    this.items = db.collection('emplois').valueChanges();
+    this.offres_db = db.collection('emplois').valueChanges();
   }
 
   ngOnInit() {
