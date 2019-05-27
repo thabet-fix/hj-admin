@@ -17,6 +17,8 @@ import { ListeEmploiComponent } from './emploi/liste-emploi/liste-emploi.compone
 import { AjouterEmploiComponent } from './emploi/ajouter-emploi/ajouter-emploi.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RecrutementComponent } from './recrutement/recrutement.component';
+import { GuideComponent } from './guide/guide.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 const appRoutes: Routes= [
   { path: '', redirectTo: '/', pathMatch: 'full' },
@@ -24,7 +26,9 @@ const appRoutes: Routes= [
   { path: 'setting', component: SettingComponent },
   { path: 'liste-emploi', component: ListeEmploiComponent },  
   { path: 'ajouter-emploi', component: AjouterEmploiComponent }, 
-  { path: 'plateforme-recrutement', component: RecrutementComponent }  
+  { path: 'plateforme-recrutement', component: RecrutementComponent },  
+  { path: 'guide', component: GuideComponent }  
+   
 ];
 
 @NgModule({
@@ -37,9 +41,11 @@ const appRoutes: Routes= [
     ListeEmploiComponent,
     AjouterEmploiComponent,
     DashboardComponent,
-    RecrutementComponent
+    RecrutementComponent,
+    GuideComponent
   ],
   imports: [
+    DragDropModule,
     RouterModule.forRoot(appRoutes),
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase, 'app-liste-emploi'), 

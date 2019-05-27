@@ -1,0 +1,79 @@
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <section class="content-header">
+        <h1>
+            Guide de choix
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Guide de choix</li>
+        </ol>
+    </section>
+    <!-- <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+    <div class="example-box" *ngFor="let guideParPriorite of guideParPriorites" cdkDrag>
+      <div class="example-custom-placeholder" *cdkDragPlaceholder></div>
+      {{guideParPriorite}}
+    </div>
+  </div> -->
+    <section class="content">
+        <div class="box">
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+                            <div class="example-box" *ngFor="let guideParPriorite of guideParPriorites" cdkDrag>
+                                <div class="example-custom-placeholder" *cdkDragPlaceholder></div>
+                                <div class="guide">{{guideParPriorite}}</div>
+                                <select class="form-control select2" style="width: 100%;">
+                                    <option selected="selected">Alabama</option>
+                                    <option>Alaska</option>
+                                    <option>California</option>
+                                    <option>Delaware</option>
+                                    <option>Tennessee</option>
+                                    <option>Texas</option>
+                                    <option>Washington</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col-sm-4 -->
+                    <div class="col-sm-8">
+                        <table class="table table-hover">
+                            <tr>
+                                <th>Nom & Prénom</th>
+                                <th>Profil</th>
+                                <th>Année d'expérience</th>
+                                <th>Technologie</th>
+                                <th style="width: 107px">Action</th>
+                            </tr>
+                            <tr *ngFor="let item of [].constructor(10); let i = index">
+                                <td>Antoine Joly</td>
+                                <td>Développeur web</td>
+                                <td>8 ans</td>
+                                <td>Angular 2+</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default">Action</button>
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                            <span class="caret"></span>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Éditer</a></li>
+                                            <li><a href="#">Désactiver</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Supprimer</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- /.col-sm-8 -->
+                </div>
+                <!-- /.row -->
+            </div>
+        </div>
+    </section>
+</div>
+<!-- /.content-wrapper -->
