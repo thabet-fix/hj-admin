@@ -38,7 +38,30 @@
                 <th>Lieu</th>
                 <th style="width: 107px">Action</th>
               </tr>
-              <tr>
+              
+		
+	    <tr *ngFor="let offre_db of offres_db | async">
+		   
+		<td> {{offre_db.titre}}</td>
+                <td> {{offre_db.secteur}}</td>
+                <td> {{offre_db.lieu}}</td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default">Action</button>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                      <span class="caret"></span>
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Éditer</a></li>
+                      <li><a href="#">Désactiver</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Supprimer</a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+	      <!--<tr>
                 <td>Concepteur Java</td>
                 <td>Développement Web</td>
                 <td>Sfax</td>
@@ -117,7 +140,7 @@
                     </ul>
                   </div>
                 </td>
-              </tr>
+              </tr> -->
             </table>
           </div>
           <!-- /.box-body -->
