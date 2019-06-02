@@ -1,160 +1,225 @@
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
-  <!-- Content Header (Page header) -->
-  <section class="content-header">
-    <h1>
-      Plateforme de recrutement
-    </h1>
-    <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li>Plateforme de recrutement</li>
-    </ol>
-  </section>
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Plateforme de recrutement
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li>Plateforme de recrutement</li>
+        </ol>
+    </section>
 
-  <!-- Main content -->
-  <section class="content">
+    <!-- Main content -->
+    <section class="content">
 
-    <div class="box box-default">
-      <div class="box-header with-border">
-        <h3 class="box-title">Recruter un stagiaire</h3>
+        <div class="box box-default">
+            <div class="box-header with-border">
+                <h3 class="box-title">Recruter un stagiaire</h3>
 
-        <div class="box-tools pull-right">
-          <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-          <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
+                </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Choisir le condidat :</label>
+                            <select class="form-control select2" style="width: 100%;">
+                              <option selected="selected">Thomas</option>
+                              <option>Antoine</option>
+                              <option>Joly</option>
+                              <option>Ludovic</option>
+                              <option>Bruno</option>
+                            </select>
+                        </div>
+                        <!-- /.form-group -->
+                        <div class="form-group">
+                            <label>Choisir le service :</label>
+                            <select class="form-control select2" style="width: 100%;">
+                              <option selected="selected">Abonnement par mois</option>
+                              <option>Robisnon</option>
+                              <option>Robisnon</option>
+                              <option>Robisnon</option>
+                              <option>Robisnon</option>
+                            </select>
+                        </div>
+                        <!-- /.form-group -->
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label>Salaire proposé :</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-addon"><i class="fa fa-euro"></i></span>
+                                    </div>
+                                </div>
+                                <!-- /.form-group -->
+                            </div>
+                            <!-- /.col-sm-4 -->
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label>Nbr salaires par an :</label>
+                                    <select class="form-control select2" style="width: 100%;">
+                                    <option selected="selected">12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                  </select>
+                                </div>
+                                <!-- /.form-group -->
+                            </div>
+                            <!-- /.col-sm-4 -->
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label>Brut à payer :</label>
+                                    <div class="input-group">
+                                        <div class="infos-input">700€ (cnss + impôt*)</div>
+                                    </div>
+                                </div>
+                                <!-- /.form-group -->
+                            </div>
+                            <!-- /.col-sm-8 -->
+                        </div>
+                        <!-- /.row -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <label>Emplacement de travail de condidat :</label>
+                            </div>
+                            <!-- /.col-sm-12 -->
+                            <div class="col-sm-6">
+
+                                <div class="form-group">
+
+                                    <div class="radio">
+                                        <label>
+                                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                          OnLine (Chez lui, à domicile)
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.col-sm-6 -->
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <div class="radio">
+                                        <label>
+                                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                          OnSite (Chez nous, Coworking)
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.col-sm-6 -->
+                        </div>
+                        <!-- /.row -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label>Offrir la location :</label>
+                                    <select class="form-control select2" style="width: 100%;">
+                                    <option selected="selected">Non</option>
+                                    <option>Oui, Location normal</option>
+                                    <option>Oui, Location de luxe</option>
+                                  </select>
+                                </div>
+                                <!-- /.form-group -->
+                            </div>
+                            <!-- /.col-sm-6 -->
+                        </div>
+                        <!-- /.row -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label>Offrir les tickets restaurant :</label>
+                                    <select class="form-control select2" style="width: 100%;">
+                                    <option selected="selected">Non</option>
+                                    <option>Oui, 100€ par mois</option>
+                                    <option>Oui, 200€ par mois</option>
+                                  </select>
+                                </div>
+                                <!-- /.form-group -->
+                            </div>
+                            <!-- /.col-sm-6 -->
+                        </div>
+                        <!-- /.row -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label>Offrir les frais de déplacement :</label>
+                                    <select class="form-control select2" style="width: 100%;">
+                                    <option selected="selected">Non</option>
+                                    <option>Oui, 200€ par mois</option>
+                                    <option>Oui, 300€ par mois</option>
+                                  </select>
+                                </div>
+                                <!-- /.form-group -->
+                            </div>
+                            <!-- /.col-sm-6 -->
+                        </div>
+                        <!-- /.row -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label>Ajouter d'autre dépense :</label>
+                                    <div class="input-group">
+                                        <input class="form-control" style="width: 65%" placeholder="Titre de la dépense...">
+                                        <input class="form-control" style="width: 35%" placeholder="Montant...">
+                                        <span class="input-group-addon"><i class="fa fa-euro"></i></span>
+
+                                        <div class="input-group-btn">
+                                            <button type="button" class="btn btn-success"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.form-group -->
+                            </div>
+                            <!-- /.col-sm-6 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Description générale de la société :</label>
+                            <textarea rows="5" class="form-control select2"></textarea>
+                        </div>
+                        <!-- /.form-group -->
+                        <div class="form-group">
+                            <label>Description détaillé du poste :</label>
+                            <textarea rows="5" class="form-control select2"></textarea>
+                        </div>
+                        <!-- /.form-group -->
+                        <div class="form-group">
+                            <label>Description du profile demandé :</label>
+                            <textarea rows="8" class="form-control select2"></textarea>
+                        </div>
+                        <!-- /.form-group -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="button" value="Sauvegarder" class="btn pull-right btn-success btn-flat">
+                    </div>
+                    <!-- /.col-md-12 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer">
+                * cnss + impôt : Lorem ipsum
+            </div>
         </div>
-      </div>
-      <!-- /.box-header -->
-      <div class="box-body">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <label>Choisir le condidat :</label>
-              <select class="form-control select2" style="width: 100%;">
-                <option selected="selected">Thomas</option>
-                <option>Antoine</option>
-                <option>Joly</option>
-                <option>Ludovic</option>
-                <option>Bruno</option>
-              </select>
-            </div>
-            <!-- /.form-group -->
-            <div class="form-group">
-              <label>Choisir le service :</label>
-              <select class="form-control select2" style="width: 100%;">
-                <option selected="selected">Abonnement par mois</option>
-                <option>Robisnon</option>
-                <option>Robisnon</option>
-                <option>Robisnon</option>
-                <option>Robisnon</option>
-              </select>
-            </div>
-            <!-- /.form-group -->
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="form-group">
-                  <label>Salaire proposé :</label>
-                  <div class="input-group">
-                    <input type="text" class="form-control">
-                    <span class="input-group-addon"><i class="fa fa-euro"></i></span>
-                  </div>
-                </div>
-                <!-- /.form-group -->
-              </div>
-              <!-- /.col-sm-4 -->
-              <div class="col-sm-8">
-                <div class="form-group">
-                  <label>&nbsp;</label>
-                  <div class="input-group">
-                    <div class="infos-input"><label>Brut à payer :</label> 700€ (cnss + impôt)</div>
-                  </div>
-                </div>
-                <!-- /.form-group -->
-              </div>
-              <!-- /.col-sm-8 -->
-            </div>
-            <!-- /.row -->
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label class="">
-                    <div class="iradio_minimal-blue" aria-checked="false" aria-disabled="false" style="position: relative;"><input
-                        type="radio" name="r1" class="minimal" style="position: absolute; opacity: 0;"><ins class="iCheck-helper"
-                        style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
-                  </label>
-                  <label>
-                    Online (Chez lui)
-                  </label>
-                </div>
-              </div>
-              <!-- /.col-sm-6 -->
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label class="">
-                    <div class="iradio_minimal-blue" aria-checked="false" aria-disabled="false" style="position: relative;"><input
-                        type="radio" name="r1" class="minimal" style="position: absolute; opacity: 0;"><ins class="iCheck-helper"
-                        style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
-                  </label>
-                  <label>
-                    Onsite (Chez nous)
-                  </label>
-                </div>
-              </div>
-              <!-- /.col-sm-6 -->
-            </div>
-            <!-- /.row -->
-            <div class="form-group">
-                <label class="">
-                  <div class="iradio_minimal-blue checked" aria-checked="true" aria-disabled="false" style="position: relative;"><input type="radio" name="r1" class="minimal" checked="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
-                </label>
-                <label class="">
-                  <div class="iradio_minimal-blue" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="radio" name="r1" class="minimal" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
-                </label>
-                <label>
-                  <div class="iradio_minimal-blue disabled" aria-checked="false" aria-disabled="true" style="position: relative;"><input type="radio" name="r1" class="minimal" disabled="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
-                  Minimal skin radio
-                </label>
-              </div>
-
-          </div>
-          <!-- /.col -->
-          <div class="col-md-6">
-            <div class="form-group">
-              <label>Description générale de la société :</label>
-              <textarea rows="5" class="form-control select2"></textarea>
-            </div>
-            <!-- /.form-group -->
-            <div class="form-group">
-              <label>Description détaillé du poste :</label>
-              <textarea rows="5" class="form-control select2"></textarea>
-            </div>
-            <!-- /.form-group -->
-            <div class="form-group">
-              <label>Description du profile demandé :</label>
-              <textarea rows="8" class="form-control select2"></textarea>
-            </div>
-            <!-- /.form-group -->
-          </div>
-          <!-- /.col -->
-        </div>
-        <!-- /.row -->
-        <div class="row">
-          <div class="col-md-12">
-            <input type="button" value="Sauvegarder" class="btn pull-right btn-success btn-flat">
-          </div>
-          <!-- /.col-md-12 -->
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.box-body -->
-      <div class="box-footer">
-        Visit <a href="https://select2.github.io/">Select2 documentation</a> for more examples and information about
-        the plugin.
-      </div>
-    </div>
-    <!-- /.box -->
+        <!-- /.box -->
 
 
-  </section>
-  <!-- /.content -->
+    </section>
+    <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
