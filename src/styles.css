@@ -3,3 +3,13 @@
 .infos-input {
     margin-top: 7px;
 }
+
+.wrapper {
+    overflow: hidden;
+}
+.dropdown-menu>li.bg-submenu>a {
+    color: #fff;
+}
+.dropdown-menu>li.bg-submenu>a:hover{
+    color: #333;
+}

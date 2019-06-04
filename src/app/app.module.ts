@@ -20,6 +20,7 @@ import { RecrutementComponent } from './recrutement/recrutement.component';
 import { GuideComponent } from './guide/guide.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { ProfilComponent } from './profil/profil.component';
+import { CondidaturesComponent } from './condidatures/condidatures.component';
 
 const appRoutes: Routes= [
   { path: '', redirectTo: '/', pathMatch: 'full' },
@@ -29,7 +30,8 @@ const appRoutes: Routes= [
   { path: 'ajouter-emploi', component: AjouterEmploiComponent }, 
   { path: 'plateforme-recrutement', component: RecrutementComponent },  
   { path: 'guide', component: GuideComponent },
-  { path: 'profil', component: ProfilComponent }  
+  { path: 'profil', component: ProfilComponent },  
+  { path: 'condidatures', component: CondidaturesComponent }  
    
 ];
 
@@ -45,7 +47,8 @@ const appRoutes: Routes= [
     DashboardComponent,
     RecrutementComponent,
     GuideComponent,
-    ProfilComponent
+    ProfilComponent,
+    CondidaturesComponent
   ],
   imports: [
     DragDropModule,
