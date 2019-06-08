@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { OffreService } from 'src/app/emploi/offre.service';
+import { Offre } from 'src/app/emploi/offre.model';
 
 @Component({
   selector: 'app-ajouter-emploi',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AjouterEmploiComponent implements OnInit {
 
-  constructor() { }
+  constructor(private offreService: OffreService) { }
 
   ngOnInit() {
   }
+
+		submitOffre (form){
+	        const formValue = form.value;
+		
+		const newOffre: Offre = { 
+			titre: formValue['offre-titre'], 
+			secteur: formValue['offre-secteur'], 
+			lieu: formValue['offre-lieu']
+		};
+		    
+		this.offreService.createOffre(newOffre);
+		form.reset();
+		
+	  }
 
 }
