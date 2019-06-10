@@ -100,13 +100,16 @@
                 <th>Lieu</th>
                 <th style="width: 107px">Action</th>
               </tr>
+<<<<<<< HEAD
+              
+		
+	    <tr *ngFor="let offre of offres">
+		   
+		<td> {{offre.titre}}</td>
+                <td> {{offre.secteur}}</td>
+                <td> {{offre.lieu}}</td>
 
-
-              <tr *ngFor="let offre_db of offres_db | async">
-
-                <td> {{offre_db.titre}}</td>
-                <td> {{offre_db.secteur}}</td>
-                <td> {{offre_db.lieu}}</td>
+>>>>>>> develop
                 <td>
                   <div class="btn-group">
                     <button type="button" class="btn btn-default">Action</button>
@@ -118,7 +121,7 @@
                       <li><a href="#">Éditer</a></li>
                       <li><a href="#">Désactiver</a></li>
                       <li class="divider"></li>
-                      <li><a href="#">Supprimer</a></li>
+                      <li><a  style="cursor: pointer;" (click)="delete(offre.id)">Supprimer</a></li>
                     </ul>
                   </div>
                 </td>

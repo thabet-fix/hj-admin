@@ -26,12 +26,45 @@
         </div>
       </div>
       <!-- /.box-header -->
+
+<form #offreForm="ngForm" (ngSubmit)="submitOffre(offreForm.form);">
       <div class="box-body">
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
               <label>Titre de l'offre :</label>
-              <input type="text" class="form-control">
+              <input type="text" 
+       class="form-control" 
+       name="offre-titre"
+       ngModel
+       #titreField="ngModel"
+       required
+       minlength="1">
+<div *ngIf="titreField.touched && titreField.errors">ERREUR : CHAMPS OBLIGATOIRE</div>
+            </div>
+            <!-- /.form-group -->
+<div class="form-group">
+              <label>Secteur :</label>
+              <input type="text" 
+       class="form-control" 
+       name="offre-secteur"
+       ngModel
+       #secteurField="ngModel"
+       required
+       minlength="1">
+<div *ngIf="secteurField.touched && secteurField.errors">ERREUR : CHAMPS OBLIGATOIRE</div>
+            </div>
+            <!-- /.form-group -->
+<div class="form-group">
+              <label>Lieu :</label>
+              <input type="text" 
+       class="form-control" 
+       name="offre-lieu"
+       ngModel
+       #lieuField="ngModel"
+       required
+       minlength="1">
+<div *ngIf="lieuField.touched && lieuField.errors">ERREUR : CHAMPS OBLIGATOIRE</div>
             </div>
             <!-- /.form-group -->
             <div class="form-group">
@@ -121,13 +154,19 @@
         <!-- /.row -->
         <div class="row">
           <div class="col-md-12">
-            <input type="button" value="Sauvegarder" class="btn pull-right btn-success btn-flat">
+
+
+            <button [disabled]="!offreForm.valid"  class="btn pull-right btn-success btn-flat">Sauvegarder</button>
           </div>
           <!-- /.col-md-12 -->
         </div>
         <!-- /.row -->
       </div>
       <!-- /.box-body -->
+
+</form>
+
+
       <div class="box-footer">
         Visit <a href="https://select2.github.io/">Select2 documentation</a> for more examples and information about
         the plugin.
