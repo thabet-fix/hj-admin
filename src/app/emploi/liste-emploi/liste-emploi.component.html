@@ -100,16 +100,15 @@
                 <th>Lieu</th>
                 <th style="width: 107px">Action</th>
               </tr>
-<<<<<<< HEAD
-              
-		
-	    <tr *ngFor="let offre of offres">
-		   
-		<td> {{offre.titre}}</td>
+
+
+
+              <tr *ngFor="let offre of offres">
+
+                <td> {{offre.titre}}</td>
                 <td> {{offre.secteur}}</td>
                 <td> {{offre.lieu}}</td>
 
->>>>>>> develop
                 <td>
                   <div class="btn-group">
                     <button type="button" class="btn btn-default">Action</button>
@@ -121,7 +120,7 @@
                       <li><a href="#">Éditer</a></li>
                       <li><a href="#">Désactiver</a></li>
                       <li class="divider"></li>
-                      <li><a  style="cursor: pointer;" (click)="delete(offre.id)">Supprimer</a></li>
+                      <li><a style="cursor: pointer;" (click)="delete(offre.id)">Supprimer</a></li>
                     </ul>
                   </div>
                 </td>
