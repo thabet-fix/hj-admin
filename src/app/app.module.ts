@@ -26,6 +26,10 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { ProfilComponent } from './profil/profil.component';
 import { CondidaturesComponent } from './condidatures/condidatures.component';
 
+/* Import des service */
+import { ProfilService } from './profil/profil.service'
+/* Import des service */
+
 const appRoutes: Routes= [
   { path: '', redirectTo: '/', pathMatch: 'full' },
   { path: '', component: DashboardComponent },
@@ -68,7 +72,9 @@ const appRoutes: Routes= [
     AngularFireStorageModule 
 // imports firebase/storage only needed for storage features
   ],
-  providers: [],
+  providers: [
+    ProfilService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
