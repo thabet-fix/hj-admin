@@ -117,7 +117,7 @@
                       <span class="sr-only">Toggle Dropdown</span>
                     </button>
                     <ul class="dropdown-menu" role="menu">
-                      <li><a href="#">Éditer</a></li>
+                      <li><a [routerLink]="['/modifier-emploi', offre.id]">Éditer</a></li>
                       <li><a href="#">Désactiver</a></li>
                       <li class="divider"></li>
                       <li><a style="cursor: pointer;" (click)="delete(offre.id)">Supprimer</a></li>
