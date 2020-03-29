@@ -3,7 +3,7 @@
 		"productList": [{
 			"product": {
 				"id": "111",
-				"name": "Dog",
+				"name": "Elephant",
 				"shortDescription": "<p>Mans best friend</p>",
 				"category": "Canine",
 				"availability": "In Stock",
